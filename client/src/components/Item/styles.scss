@@ -1,0 +1,47 @@
+@import 'src/variables';
+
+.Item {
+  background-color: white;
+  padding: $quadIndent;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: $doubleIndent;
+  position: relative;
+  min-height: 154px;
+
+  .name {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: $quadIndent;
+  }
+  .inputError {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: $quadIndent;
+  }
+  .editField {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding: $mainIndent;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-bottom: $doubleIndent;
+  }
+  .btnsWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .powerIcon {
+    width: 16px;
+    height: 16px;
+  }
+}

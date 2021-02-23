@@ -1,0 +1,30 @@
+@import 'src/variables';
+
+.Main {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $maxIndent;
+  border-radius: 8px;
+  // padding: $maxIndent;
+  // box-sizing: border-box;
+}
+
+// Desktop
+@media screen and (min-width: 1025px) {
+  .Main {
+    // margin: 0 auto;
+    // max-width: 700px;
+  }
+}
+
+// Mobile
+@media (max-width: 750px) {
+  .Main {
+    // width: 100%;
+    margin: 20px;
+  }
+}

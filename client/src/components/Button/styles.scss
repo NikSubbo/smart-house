@@ -1,0 +1,30 @@
+@import 'src/variables';
+
+.Button {
+  padding: $mainIndent;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  min-width: 60px;
+
+  &.switch {
+    font-size: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    min-width: auto;
+    padding: 0;
+
+    &.red {
+      background-color: red;
+    }
+    &.green {
+      background-color: green;
+    }
+  } 
+
+  &.return {
+    position: absolute;
+    right: $quadIndent;
+  }
+}
