@@ -6,7 +6,6 @@ const cors = require('cors');
 const path = require('path');
 const indexRouter = require('./routes/index');
 const applianceRouter = require('./routes/appliance');
-// const useErrorHandlers = require('./middleware/error-handlers');
 require('./middleware/db-connect');
 require('dotenv').config();
 
@@ -17,7 +16,6 @@ app.use(express.json());
 
 app.use('/api', indexRouter);
 app.use('/api/appliance', applianceRouter);
-// useErrorHandlers(app);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
